@@ -143,11 +143,9 @@ public class StepBar: UIStackView {
                         let y = (i * Int(self.progress.frame.height) / (self.stepCount - 1))
                         stepButton.frame = CGRect(x: (self.frame.width/2) - (stepSize/2), y: CGFloat(y) - CGFloat(stepSize/4), width: stepSize, height: stepSize)
                         
-                        label.frame.origin.y = label.frame.origin.y + 2
-                        label.frame.origin.x = label.frame.origin.x + 12
-                        
-                        labelSub.frame.origin.y = labelSub.frame.origin.y + 2
-                        labelSub.frame.origin.x = labelSub.frame.origin.x + 12
+                        label.frame.origin.y = (stepButton.frame.origin.y - 12.5) + (stepSize/2)
+                        label.frame.origin.x = label.frame.origin.x + CGFloat(stepSize/4.5)
+                        labelSub.frame.origin.x = labelSub.frame.origin.x + CGFloat(stepSize/4.5)
                         
                     } else {
                         let x = (i * Int(self.progress.frame.width) / (self.stepCount - 1))
