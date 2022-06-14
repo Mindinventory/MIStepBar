@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class StepBar: UIStackView {
+public class StepBar: UIStackView {
     
     // MARK: IBInspectable
     
