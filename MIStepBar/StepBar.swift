@@ -40,7 +40,7 @@ public class StepBar: UIStackView {
     let currStepObservingContext = UnsafeMutableRawPointer(bitPattern: 1)
     
     // MARK: draw
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
         
         currStep = currentStep
