@@ -28,15 +28,15 @@ public class StepBar: UIStackView {
     @IBInspectable var SelectedCircleSize: CGFloat = 25
     
     
-    @objc dynamic var currStep: Int = 0
+    @objc public dynamic var currStep: Int = 0
     
-    var stepTitles = [String]()
-    var stepSubTitles = [String]()
-    var stepSelectedImages = [String]()
-    var progress = UIProgressView()
-    var stepButtonPoint = UIButton()
-    var label = UILabel()
-    var labelSub = UILabel()
+    public var stepTitles = [String]()
+    public var stepSubTitles = [String]()
+    public var stepSelectedImages = [String]()
+    public var progress = UIProgressView()
+    public var stepButtonPoint = UIButton()
+    public var label = UILabel()
+    public var labelSub = UILabel()
     let currStepObservingContext = UnsafeMutableRawPointer(bitPattern: 1)
     
     // MARK: draw
