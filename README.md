@@ -29,6 +29,9 @@ pod 'MIStepBar', git: 'https://github.com/PiyushSelarka/MIStepBar.git', branch: 
 ```
 Then run `pod install` from the Example directory.
 
+# Manually
+You could directly copy and add the folder `MIStepBar` which contains 'StepBar.swift' file to your project.
+
 ## Usage
 
 And then remember to `import MIStepBar` module before using it.
