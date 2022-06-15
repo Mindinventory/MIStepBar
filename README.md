@@ -18,7 +18,7 @@ Swfit 5 is supported.
 Checkout this super easy stepbar integration and example.!!! 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84714866/168037057-fb6d82f4-0bdd-44cc-adf2-5f622853f658.gif">
+  <img src="">
 </p>
 
 ## Installation
@@ -55,11 +55,9 @@ override func viewDidLoad() {
 ## Customization Stroyboard and Xib (Optional)
 After adding a `UIStackView` to Stroyboard or Xib, change its class to `StepBar`. Then you are able to config it as this demonstration:
 
-![Screenshot 2022-06-15 at 12 13 03 PM](https://user-images.githubusercontent.com/42262083/173760338-3c3d4cce-d64f-4e9d-8eaa-509d10bee98c.png)
-
-## Help
-Hope you will enjoy it! Feel free to make an issue to me if you have any problems or need some improvements. And Please give the project a star if it's helpful to you, that's a great encouragement to me! ;)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/42262083/173760338-3c3d4cce-d64f-4e9d-8eaa-509d10bee98c.png">
+</p>
 
 ## Requirements
 - iOS 13.0+
