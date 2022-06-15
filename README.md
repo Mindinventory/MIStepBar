@@ -31,71 +31,32 @@ Then run `pod install` from the Example directory.
 
 ## Usage
 
-1. Change the class of a view from UIView to TopTabbarView
+And then remember to `import MIStepBar` module before using it.
+
+Change the class of a view from `UIStackView` to StepBar
 ```swift
-@IBOutlet private weak var topTabBarView: TopTabbarView!
+@IBOutlet weak var stepBar: StepBar!
 ```
 2. Programmatically:
 
 ```swift
-let topTabBarView = TopTabbarView(frame: myFrame)
-
+override func viewDidLoad() {
+  super.viewDidLoad()
+    
+  stepBar.stepTitles = ["Book Appointment", "Payment", "Confirmed"]
+  stepBar.stepSubTitles = ["Dt 2020/11/02", "Dt 2020/11/04", "Dt 2020/11/06"]
+  stepBar.stepSelectedImages = ["calendar","check","credit-card"]
+}
 ```
 
-## Customization 
+# Customization Stroyboard and Xib (Optional)
+After adding a `UIStackView` to Stroyboard or Xib, change its class to `StepBar`. Then you are able to config it as this demonstration:
 
-```swift
-    private func configureTabBarItem() {
-        
-        topTabBarView.dataSource = ["M", "I", "N", "D", "I", "N", "V", "E", "N", "T", "O", "R", "Y"]
-        topTabBarView.dotColor = .white
-        topTabBarView.waveHeight = 16
-        topTabBarView.leftPadding = 10
-        topTabBarView.rightPadding = 10
-        topTabBarView.tabBarColor = .red
-        topTabBarView.onItemSelected = { (index) in
-                debugPrint("tabIndex: \(index)")
-        }
-        topTabBarView.isScaleItem = true
-        topTabBarView.tabBarItemStyle = .setStyle(font: UIFont.boldSystemFont(ofSize: 18),
-                                                  foregroundColor: .white)
-    }
-```
+![Screenshot 2022-06-15 at 12 13 03 PM](https://user-images.githubusercontent.com/42262083/173760338-3c3d4cce-d64f-4e9d-8eaa-509d10bee98c.png)
 
-#### dataSource
-The dataSource property accepts string array which is used to display title of tab and creates number of tab that you want to create.
+# Help
+Hope you will enjoy it! Feel free to make an issue to me if you have any problems or need some improvements. And Please give the project a star if it's helpful to you, that's a great encouragement to me! ;)
 
-#### dotColor
-The dotColor property change the color of dot which is place at center of wave.
-
-#### waveHeight
-The waveHeight property change height of wave.
-
-#### leftPadding, rightPadding
-The left and right padding property will change the tabBar left and right padding to the view.
-
-#### tabBarColor
-The tabBarColor property used to change background color of tabbar color.
-
-#### isScaleItem
-The isScaleItem property enables you to off/on scaling of tab titles.
-
-#### tabBarItemStyle
-The tabBarItemStyle used to tabBarItem font and textColor.
-
-#### selectedTab
-The selectedTab used to set selected tab initially.
-
-#### setSelectedTab(with index: Int)
-This function used to set selected tab programmatically.
-
-#### onItemSelected
-You will receive selected tab index in onItemSelected clouser.
-```swift
-  topTabBarView.onItemSelected = { (index) in
-                debugPrint("tabIndex: \(index)")
-  }
-```
 
 ## Requirements
 - iOS 13.0+
