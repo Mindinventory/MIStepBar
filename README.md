@@ -29,7 +29,7 @@ pod 'MIStepBar', git: 'https://github.com/PiyushSelarka/MIStepBar.git', branch: 
 ```
 Then run `pod install` from the Example directory.
 
-# Manually
+## Manually
 You could directly copy and add the folder `MIStepBar` which contains 'StepBar.swift' file to your project.
 
 ## Usage
@@ -52,12 +52,12 @@ override func viewDidLoad() {
 }
 ```
 
-# Customization Stroyboard and Xib (Optional)
+## Customization Stroyboard and Xib (Optional)
 After adding a `UIStackView` to Stroyboard or Xib, change its class to `StepBar`. Then you are able to config it as this demonstration:
 
 ![Screenshot 2022-06-15 at 12 13 03 PM](https://user-images.githubusercontent.com/42262083/173760338-3c3d4cce-d64f-4e9d-8eaa-509d10bee98c.png)
 
-# Help
+## Help
 Hope you will enjoy it! Feel free to make an issue to me if you have any problems or need some improvements. And Please give the project a star if it's helpful to you, that's a great encouragement to me! ;)
 
 
