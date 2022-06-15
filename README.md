@@ -37,7 +37,7 @@ Change the class of a view from `UIStackView` to StepBar
 ```swift
 @IBOutlet weak var stepBar: StepBar!
 ```
-2. Programmatically:
+Programmatically:
 
 ```swift
 override func viewDidLoad() {
