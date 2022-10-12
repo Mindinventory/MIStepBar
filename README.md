@@ -12,10 +12,9 @@
 </a>
 <p></p> 
 
-Good news for all our users out there! Now there are no boundaries to your convenience, **Step bar** is an iOS library that indicates steps in an animated way.
-Swfit 5 is supported.
+Good news for all our users out there! Now there are no boundaries to your convenience, Use this swift 5 supported library and track your food order, your purchase order or the  booked appoinment..!!!
 
-Checkout this super easy stepbar integration and example.!!! 
+Checkout this super easy stepped bar integration and example.!!! 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/42262083/195347081-177f39e7-e286-4a27-9867-c79347caeca9.gif">
