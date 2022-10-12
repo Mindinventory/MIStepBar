@@ -18,7 +18,7 @@ Swfit 5 is supported.
 Checkout this super easy stepbar integration and example.!!! 
 
 <p align="center">
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/42262083/195347081-177f39e7-e286-4a27-9867-c79347caeca9.gif">
 </p>
 
 ## Installation
