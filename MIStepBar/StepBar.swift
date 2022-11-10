@@ -28,7 +28,7 @@ public class StepBar: UIStackView {
     @IBInspectable var SelectedCircleSize: CGFloat = 25
     
     
-    @objc public dynamic var currStep: Int = 0
+    @objc public dynamic var currentStepValue: Int = 0
     
     public var stepTitles = [String]()
     public var stepSubTitles = [String]()
@@ -43,8 +43,8 @@ public class StepBar: UIStackView {
     public override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        currStep = currentStep
-        addObserver(self, forKeyPath: #keyPath(currStep), options: [.new, .old], context: currStepObservingContext)
+        currentStepValue = currentStep
+        addObserver(self, forKeyPath: #keyPath(currentStepValue), options: [.new, .old], context: currStepObservingContext)
         
         if (vertical) {
             progress.frame = CGRect(x: -(self.frame.height/2) + (self.frame.width/2) + (CircleSize/2), y: self.frame.height/2 , width: self.frame.height - CircleSize, height:0)
@@ -71,7 +71,7 @@ public class StepBar: UIStackView {
         addSubview(progress)
         
         let div = Float(100.0 / Float(stepCount - 1))
-        let final = Float(currStep - 1) * (div / 100)
+        let final = Float(currentStepValue - 1) * (div / 100)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             UIView.animate(withDuration: 2.0) {
