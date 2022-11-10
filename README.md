@@ -52,7 +52,7 @@ override func viewDidLoad() {
 ```
 Manually Update Step:
 ```swift
-currentStepValue = 2
+stepBar.currentStepValue = 2
 ```
 
 ## Customization Stroyboard and Xib (Optional)
