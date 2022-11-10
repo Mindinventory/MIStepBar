@@ -50,6 +50,10 @@ override func viewDidLoad() {
   stepBar.stepSelectedImages = ["calendar","check","credit-card"]
 }
 ```
+Manually Update Step:
+```swift
+currentStepValue = 2
+```
 
 ## Customization Stroyboard and Xib (Optional)
 After adding a `UIStackView` to Stroyboard or Xib, change its class to `StepBar`. Then you are able to config it as this demonstration:
