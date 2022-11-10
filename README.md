@@ -24,7 +24,7 @@ Checkout this super easy stepped bar integration and example.!!!
 To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MIStepBar', git: 'https://github.com/PiyushSelarka/MIStepBar.git', branch: 'main'
+pod 'MIStepBar', git: 'https://github.com/Mindinventory/MIStepBar', branch: 'main'
 ```
 Then run `pod install` from the Example directory.
 
