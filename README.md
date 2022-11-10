@@ -12,7 +12,7 @@
 </a>
 <p></p> 
 
-Good news for all our users out there! Now there are no boundaries to your convenience, Use this swift 5 supported library and track your food order, your purchase order or the  booked appoinment..!!!
+Use this swift 5 supported library MIStepBar and track your food order, your purchase order or the  booked appoinment many more things..!!!
 
 Checkout this super easy stepped bar integration and example.!!! 
 
