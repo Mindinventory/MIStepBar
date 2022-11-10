@@ -133,7 +133,7 @@ public class StepBar: UIStackView {
             
             let size = CircleSize / 2.5
             
-            if i+1 == currStep {
+            if i+1 == currentStepValue {
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     
@@ -177,7 +177,7 @@ public class StepBar: UIStackView {
                 }
             }
             
-            else if i+1 < currStep {
+            else if i+1 < currentStepValue {
                 stepButton.backgroundColor = self.progressTintColor
             }
             if (ShowTitle) {
@@ -208,7 +208,7 @@ public class StepBar: UIStackView {
     }
     
     deinit {
-        removeObserver(self, forKeyPath: #keyPath(currStep))
+        removeObserver(self, forKeyPath: #keyPath(currentStepValue))
     }
 }
 
